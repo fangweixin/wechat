@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team2.wechat.Register"
+    android:background="@color/white">
+    <!--标题-填写手机号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_color">
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="@dimen/backlen"
+            android:layout_height="@dimen/backlen"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="填写手机号"
+            style="@style/head_title"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80.1dp">
+
+                <TextView
+                    android:id="@+id/nickname"
+                    style="@style/register_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    />
+
+                <EditText
+                    android:id="@+id/inputNickname"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="51dp"
+                    android:layout_toEndOf="@+id/nickname"
+                    android:hint="例如：陈晨"
+                    android:background="@null"  />
+
+                <View
+                    android:id="@+id/register_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/nickname"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toStartOf="@+id/inputhead"
+                    android:background="@color/line_green" />
+
+                <ImageView
+                    android:id="@+id/inputhead"
+                    android:layout_width= "@dimen/head_size"
+                    android:layout_height="@dimen/head_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/inputhead" />
+            </RelativeLayout>
+
+            <!--国家地区-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/country_region"
+                    style="@style/register_font_style"/>
+                <!--中国-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/China_86"
+                    android:textColor="@color/font_green"
+                    style="@style/register_font_style"/>
+                <View
+                    android:id="@+id/register_line2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"></View>
+            </RelativeLayout>
+            <!--手机号-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/register_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    style="@style/register_font_style"/>
+                <!--输入手机号-->
+                <EditText
+                    android:id="@+id/inputPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/register_phone_number"
+                    android:layout_marginStart="38dp"
+                    android:layout_toEndOf="@+id/register_phone_number"
+                    android:background="@null"
+                    android:hint="请填写手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+                <View
+                    android:id="@+id/register_line3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"></View>
+            </RelativeLayout>
+
+            <!--输入密码-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/register_passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="密码"
+                    style="@style/register_font_style"/>
+                <!--输入手机号-->
+                <EditText
+                    android:password="true"
+                    android:id="@+id/inputPasswd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/register_passwd"
+                    android:layout_marginStart="56dp"
+                    android:layout_toEndOf="@+id/register_passwd"
+                    android:background="@null"
+                    android:hint="填写密码"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+                <View
+                    android:id="@+id/register_line4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"></View>
+            </RelativeLayout>
+
+            <!--确认密码-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/register_passwd_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="密码"
+                    style="@style/register_font_style"/>
+                <EditText
+                    android:password="true"
+                    android:id="@+id/inputPasswd_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/register_passwd_again"
+                    android:layout_marginStart="56dp"
+                    android:layout_toEndOf="@+id/register_passwd_again"
+                    android:background="@null"
+                    android:hint="确认密码"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+                <View
+                    android:id="@+id/register_line5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"></View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--id不能重-->
+                <Button
+                    android:id="@+id/userregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/button_color_graygreen"
+                    android:enabled="false"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="注册"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/declaration" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

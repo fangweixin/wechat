@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <!--返回，菜单 相对布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chachalen">
+        <ImageView
+            android:id="@+id/returnButton"
+            android:src="@drawable/chacha"
+            android:layout_width="@dimen/chachalen"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:id="@+id/menuButton"
+            android:src="@drawable/menudiandiandian"
+            android:layout_width="@dimen/chachalen"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!--线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <!--手机号登录字体 线性布局-->
+        <LinearLayout
+            android:id="@+id/mobile_login_hint"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <!--登录-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mobile_login"
+                android:textColor="@color/font_black"
+                android:textSize="80px" />
+        </LinearLayout>
+        <!--国家地区，相对布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp">
+                <!--国家-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/country_region"
+                    android:textColor="@color/font_black"
+                    android:textSize="16sp" />
+                <!--中国-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/China_86"
+                    android:textColor="@color/font_green"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <!--线条-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_gray" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:text="@string/telephone"
+                android:textColor="@color/font_black"
+                android:textSize="16sp" />
+            输入手机号，取消下划线
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentBottom="true"
+
+                android:background="@null"
+                android:hint="请填写手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="50dp"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        线条
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_green" />
+        -->
+        <!--输入手机号-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PhoneNumber"
+                android:layout_alignBottom="@+id/PhoneNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="手机号"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+            <!--手机号-->
+            <EditText
+                android:id="@+id/PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_login"
+                android:hint="请填写手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="90dp"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+        <!--输入密码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/password"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/password"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+            <!--密码-->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="填写密码"
+                android:paddingLeft="90dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用微信号/QQ号/邮箱登录"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:textColor="#576B95"/>
+        </RelativeLayout>
+        <!--登录按钮-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--id不能重-->
+            <Button
+                android:id="@+id/userlogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/button_color_graygreen"
+                android:enabled="false"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="登录"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

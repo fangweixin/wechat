@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context="com.team2.wechat.bean.FriendVerify">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:background="@color/title_color">
+
+        <ImageView
+            android:id="@+id/iv_vertify_back"
+            android:layout_width="@dimen/backlen"
+            android:layout_height="@dimen/backlen"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_vertify_back"
+            android:text="朋友验证" />
+
+        <Button
+            android:id="@+id/btn_send_vertigy"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_rectangle"
+            android:layout_alignParentRight="true"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="完成"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_vertiry_01"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="为朋友设置备注" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_remark"
+                android:layout_marginTop="0dp"
+                android:hint="请输入备注（可以为空）"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vertiry_02"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="19dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_vertify_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_vertify_tag"
+                android:layout_marginTop="8dp"
+                android:editable="false"
+                android:hint="添加标签对联系人进行分类"
+                android:paddingStart="10dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="19dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_set_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="设置朋友圈权限" />
+
+            <TextView
+                android:id="@+id/tv_set_authority"
+                style="@style/contact_fonts_stayle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_set_privacy"
+                android:layout_marginTop="18dp"
+                android:paddingStart="0dp"
+                android:text="不让他(她)看我的朋友圈"
+                android:textColor="@color/font_black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/tv_set_privacy"
+                android:layout_alignTop="@+id/tv_set_authority" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

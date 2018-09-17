@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team2.wechat.SelectProfile"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--标题栏-->
+        <LinearLayout
+            android:id="@+id/select_tiele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_color">
+            <ImageView
+                android:id="@+id/iv_selectImage_back"
+                android:layout_width="@dimen/backlen"
+                android:layout_height="@dimen/backlen"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片"
+                style="@style/head_title"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@+id/select_tiele"
+            android:layout_above="@+id/select_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <GridView
+                android:id="@+id/main_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="20dip"
+                android:gravity="center"
+                android:verticalSpacing="20dip"
+                android:columnWidth="90dip"
+                android:numColumns="2" >
+            </GridView>
+
+        </RelativeLayout>
+        <!--底部-->
+        <LinearLayout
+            android:id="@+id/select_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_color">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="@dimen/backlen"
+                android:src="@drawable/all_images"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

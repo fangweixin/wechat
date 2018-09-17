@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+    <!--个人信息-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_user_avatar"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/head00"/>
+
+        <TextView
+            style="@style/contact_fonts_stayle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_user_avatar"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/iv_user_avatar"
+            android:text="wjsay"
+            android:id="@+id/tv_user_nickname" />
+
+        <TextView
+            style="@style/contact_fonts_stayle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_alignStart="@+id/tv_user_nickname"
+            android:layout_below="@+id/tv_user_nickname"
+            android:layout_marginTop="11dp"
+            android:text="微信号：wx472331573"
+            android:id="@+id/tv_user_weixinhao"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/erweima" />
+
+    </RelativeLayout>
+
+    <!--wallet钱包-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_wallet"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/wallet"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_wallet"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="钱包"/>
+
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:background="@color/line_gray" />
+    <!--收藏-->
+    <RelativeLayout
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_collection"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/collection"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_collection"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="收藏"/>
+
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:background="@color/line_gray" />
+    <!--相册-->
+    <RelativeLayout
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_gallery"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/picture"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_gallery"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="相册"/>
+
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:background="@color/line_gray" />
+    <!--卡包-->
+    <RelativeLayout
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_kabao"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/kabao"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_kabao"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="卡包"/>
+
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:background="@color/line_gray" />
+    <!--表情-->
+    <RelativeLayout
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_emoji"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/emoji"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_emoji"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="表情"/>
+
+    </RelativeLayout>
+
+    <!--设置-->
+    <RelativeLayout
+        android:id="@+id/profile_setting"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/pressed_style"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_setting"
+            android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+            android:layout_marginTop="@dimen/contact_list_margin_vertical"
+            android:layout_width="@dimen/profile_image_edgelen"
+            android:layout_height="@dimen/profile_image_edgelen"
+            android:src="@drawable/setting"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_setting"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/contact_fonts_stayle"
+
+            android:text="设置"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

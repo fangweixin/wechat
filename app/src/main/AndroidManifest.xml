@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team2.wechat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取存储权限读 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 获取存储权限写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <!-- 使用相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:theme="@style/AppTheme" -->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ChatActivity" />
+
+        <service
+            android:name=".myservice.ServiceRegister"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".myservice.LoginService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Register" />
+        <activity android:name=".SelectProfile" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.team2.wechat.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".mysetting.Setting" />
+        <activity android:name=".mysetting.Wurao" />
+        <activity android:name=".mysetting.NewMessage" />
+        <activity android:name=".mysetting.Chat2" />
+        <activity android:name=".mysetting.Common" />
+        <activity android:name=".mysetting.Private" />
+        <activity android:name=".mysetting.Safe" />
+        <activity android:name=".mysetting.About" />
+        <activity android:name=".mysetting.TestActicity" />
+
+        <service
+            android:name=".myservice.InitDataService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".bean.findpkg.LittleProcess" />
+        <activity
+            android:name=".bean.TopMenuSearch"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".bean.AddUser" />
+        <activity android:name=".bean.UserSearch" />
+        <activity android:name=".bean.UserInfoDisp" />
+        <activity android:name=".bean.FriendVerify" />
+        <activity android:name=".contactlist.SeeMyNewFriend" />
+        <activity android:name=".comments.MomentsActivity" />
+
+        <service
+            android:name=".myservice.DataDealService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name="com.team2.wechat.MessageService"/>
+
+        <activity android:name=".comments.SendMoments" />
+        <activity android:name=".LoginActivity"></activity>
+    </application>
+
+</manifest>

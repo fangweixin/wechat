@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team2.wechat.comments.Comments"
+    android:background="@color/black">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:background="@color/title_color">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/comments_back"
+            android:layout_width="@dimen/backlen"
+            android:layout_height="@dimen/backlen"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_toRightOf="@id/comments_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="朋友圈"
+            style="@style/head_title"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="200dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/photos" />
+    </RelativeLayout>
+
+    <!--滚动-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

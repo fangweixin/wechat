@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="language_select_tag">语言</string>
+    <string name="mobile_login">手机号登录</string>
+    <string name="country_region">国家/地区</string>
+    <string name="China_86">中国(+86)</string>
+
+    <!--联系人-->
+    <string name="new_friends">新的朋友</string>
+    <string name="contact_falg">标签</string>
+    <string name="public_no">公众号</string>
+
+    <!--注册时的一个超链接-->
+    <string name="declaration">点击上面的“注册”按钮，即表示您同意
+        <a href='#'>《腾讯微信软件许可及服务协议》</a>和
+        <a href='#'>《微信隐私保护指引》</a></string>
+    <!--图片选择-->
+
+
+    <string name="app_name">微信</string>
+    <string name="contacts">通讯录</string>
+    <string name="me">我</string>
+    <string name="discover">发现</string>
+    <string name="group_chats">群聊</string>
+    <string name="chat">微信</string>
+    <string name="password">密码</string>
+
+    <!--王春雷、汪涛-->
+    <string name="tongzhi">关闭时，当接收到微信消息时，通知提示将不显示发信人和内容摘要。</string>
+    <string name="wurao">开启后，在设定时间段内收到新消息时不会响铃或振动。</string>
+    <string name="rukou">关闭后，将隐藏“发现”中的朋友圈入口，你发过的朋友圈不会清空，朋友仍可以看到。</string>
+    <string name="gengxin">关闭后，有朋友更新照片时，界面下方的“发现”切换按钮上不再出现红点提示。</string>
+    <string name="safecenter">如果你遇到微信被盗，无法登录等问题，可以前往安全中心</string>
+
+</resources>

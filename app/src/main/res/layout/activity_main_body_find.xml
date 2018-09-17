@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+    <!--find发现-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--朋友圈-->
+        <RelativeLayout
+            android:id="@+id/comments"
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_friends_circle"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/friendcircle"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_friends_circle"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="朋友圈"/>
+
+        </RelativeLayout>
+        <!--扫一扫-->
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_scan"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/scan"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_scan"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="扫一扫"/>
+
+        </RelativeLayout>
+        <!--分割线-->
+        <View
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            android:background="@color/line_gray" />
+
+        <!--摇一摇-->
+        <RelativeLayout
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_yaoyiyao"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/yaoyiyao"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_yaoyiyao"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="摇一摇"/>
+
+        </RelativeLayout>
+
+        <!--附近的人-->
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_new_friends"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/new_friends"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_new_friends"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="附近的人"/>
+
+        </RelativeLayout>
+
+        <!--购物-->
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_shopping"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/shopping"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_shopping"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="购物"/>
+
+        </RelativeLayout>
+        <!--分割线-->
+        <View
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            android:background="@color/line_gray" />
+
+        <!--游戏-->
+        <RelativeLayout
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_game"
+                android:layout_marginLeft="@dimen/contact_list_margin_horizontal"
+                android:layout_marginTop="@dimen/contact_list_margin_vertical"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:src="@drawable/game"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_game"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/contact_fonts_stayle"
+
+                android:text="游戏"/>
+
+        </RelativeLayout>
+
+        <!--小程序-->
+        <RelativeLayout
+            android:id="@+id/rl_little_process"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/pressed_style"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contact_item_height">
+
+            <ImageView
+                android:id="@+id/iv_little_processs"
+                android:layout_width="@dimen/contact_image_edgelen"
+                android:layout_height="@dimen/contact_image_edgelen"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/little_progress" />
+
+            <TextView
+                style="@style/contact_fonts_stayle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_little_processs"
+                android:text="小程序" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

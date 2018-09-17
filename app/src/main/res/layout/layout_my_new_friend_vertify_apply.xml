@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_height="70dp"
+    android:background="@drawable/press_white2lightgray">
+    <ImageView
+        android:id="@+id/iv_new_apply_friend_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_avatar"/>
+
+    <TextView
+        android:id="@+id/tv_newuser_name"
+        style="@style/contact_fonts_stayle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_new_apply_friend_profile"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/iv_new_apply_friend_profile"
+        android:text="新朋友姓名" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_newuser_name"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_newuser_name"
+        android:layout_marginStart="19dp"
+        android:text="验证信息" />
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_new_apply_friend_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:text="添加"/>
+</RelativeLayout>

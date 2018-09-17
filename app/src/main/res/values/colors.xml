@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--按压效果-->
+    <color name="pressed_light_gray">#d7dce1</color>
+    <color name="pressed_white">#FFFFFF</color>
+    <color name="button_color_green">#1AAD19</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <!-- 透明 -->
+    <!--窗体颜色 -->
+    <color name="windows_color">#F5F5F5</color>
+    <color name="bar_color">#393A3F</color>
+    <!--字体颜色-->
+    <color name="font_black">#353535</color>
+    <color name="font_green">#45c01a</color>
+    <!--按钮颜色-->
+    <color name="button_color_graygreen">#A2E08D</color>
+
+    <!--线条颜色-->
+    <color name="line_gray">#dbdbdb</color>
+    <color name="line_green">#45c01a</color>
+
+    <!--背景颜色-->
+    <color name="background_color">#EBEBEB</color>
+    <!--标题背景色-->
+    <color name="title_color">#393A3F</color>
+
+
+    <!--常用颜色-->
+    <color name="green">#00ff00</color>
+    <color name="touming">#00000000</color>
+    <!--popup-->
+
+    <color name="black">#ff000000</color>
+    <color name="gray">#ff808080</color>
+
+    <!--王春雷、汪涛-->
+    <color name="ziti">#a6a4a4</color>
+    <color name="line_black">#e1e1e1</color>
+    <color name="pressed">#d9d9d9</color>
+    <color name="yinsi">#6e98b6</color>
+    <!--外包-->
+    <color name="colorDark">#393a3f</color>
+    <color name="colorDeepDark">#29292d</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDodgeBlue">#1E90FF</color>
+    <color name="colorLightGray">#dadada</color>
+</resources>
