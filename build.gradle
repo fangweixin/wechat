@@ -3,11 +3,17 @@
 buildscript {
     
     repositories {
-        google()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/public' } //jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google' }  //google()
+        maven { url 'https://maven.aliyun.com/repository/central' }  // groovy central
+        maven { url 'https://maven.aliyun.com/repository/spring' }  // spring
+        maven { url 'https://maven.aliyun.com/repository/public' }  // public
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }  // gradle plugin
+        maven { url 'https://maven.aliyun.com/repository/spring-plugin' }  // spring plugin
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' } // apache-snapshots
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:4.1.2'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -17,8 +23,14 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/public' } //jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google' }  //google()
+        maven { url 'https://maven.aliyun.com/repository/central' }  // groovy central
+        maven { url 'https://maven.aliyun.com/repository/spring' }  // spring
+        maven { url 'https://maven.aliyun.com/repository/public' }  // public
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }  // gradle plugin
+        maven { url 'https://maven.aliyun.com/repository/spring-plugin' }  // spring plugin
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' } // apache-snapshots
     }
 }
 

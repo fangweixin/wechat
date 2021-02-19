@@ -99,7 +99,8 @@ public class Utils {
         try {
             Class.forName("com.mysql.jdbc.Driver"); //加载驱动
             //根据数据库的URL 用户名 密码  来连接数据库
-            String ip = "139.199.38.177";//文的腾讯云服务器公网IP（北京）
+            // String ip = "139.199.38.177";//文的腾讯云服务器公网IP（北京）
+            String ip = "172.17.0.2";
             conn = DriverManager.getConnection(
                     "jdbc:mysql://" + ip + ":3306/" + dbName, "weixin", "soft02");
         } catch (SQLException ex) {
@@ -132,8 +133,9 @@ public class Utils {
             String sql = "INSERT INTO `user` (password, name, gender, telephone" +
                     ", address, birthday, headUrl, problem, weixinhao)" +
                     " VALUES ('" + passwd  + "', '" + name + "', '" +
-                    gender + "', '" + telephone + "', '" + address +
-                    "', '" + birthday + "', '" + headUrl +  "', '" + problem +   "', '" + weixinhao_str + "')";
+                    (gender == null ? "" : gender) + "', '" + telephone + "', '" + (address == null ? "" : address) +
+                    "', '" + (birthday == null ? "1970:01:01" : birthday) + "', '" + (headUrl == null ? "" : headUrl)
+                    +  "', '" + (problem == null ? "" : problem) +   "', '" + weixinhao_str + "')";
             Log.d(TAG, "执行的SQL语句为：" + sql);
             st.execute(sql); //实型sql语句
             Log.d(TAG, " SQL语句被处理完成");

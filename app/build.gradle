@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -26,13 +30,13 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation files('libs/mysql-connector-java-5.1.42-bin.jar')
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation files('libs/glide-3.7.0.jar')
     implementation files('libs/classes.jar')
     implementation files('libs/httpclient-4.5.4.jar')
     implementation files('libs/httpcore-4.2.4.jar')
     implementation files('libs/PhotoUtil.jar')
-    compile 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
     implementation files('libs/gson-2.8.0.jar')
 }
